@@ -1,0 +1,105 @@
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-height: 100vh;
+}
+html {
+  background: url("./images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  height: 100vh;
+}
+.main-title {
+  text-align: center;
+  margin-top: 20px;
+}
+form {
+  height: 75vh;
+  text-align: center;
+}
+
+.game {
+  background-color: brown;
+  border-radius: 40px;
+  border: 2px solid white;
+  height: 70vh;
+  width: 70vh;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+}
+
+.aiuola {
+  width: 25vh;
+  background: none;
+  border: none;
+  outline: none;
+  background-image: url("./images/aiuola.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-basis: 25%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.aiuola:hover {
+  background-color: gray;
+}
+
+.giudizio {
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 40px;
+  margin-top: 150px;
+  font-weight: bold;
+}
+
+.tentativi {
+  color: black;
+  text-align: center;
+  background-color: yellow;
+  width: fit-content;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.rigioca {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(51, 170, 51, 0.7);
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.rigioca button {
+  font-size: 32px;
+  margin-top: calc((100vh - 50px) / 2);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#hidden {
+  display: none;
+}
+
+#visibile {
+  display: block;
+}
